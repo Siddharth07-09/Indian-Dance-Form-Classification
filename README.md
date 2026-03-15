@@ -122,27 +122,27 @@ Heatmaps were generated using a red color scale for better visualization.
 
 ---
 
-Why Linear Regression and Multiple Linear Regression Were Not Used
+### Why Linear Regression and Multiple Linear Regression Were Not Used
 
-Linear Regression is used for predicting continuous numerical values such as house price, temperature, or salary.
+* Linear Regression is used for predicting continuous numerical values such as house price, temperature, or salary.
 
-In this project, the goal is to classify Indian dance forms, which are categorical labels (e.g., Bharatanatyam, Kathak, Odissi).
+* In this project, the goal is to classify Indian dance forms, which are categorical labels (e.g., Bharatanatyam, Kathak, Odissi).
 
-Since the output is categorical and not numerical, Linear Regression is not suitable for this problem.
+  Since the output is categorical and not numerical, Linear Regression is not suitable for this problem.
 
-Multiple Linear Regression is simply an extension of Linear Regression with multiple input variables but still predicts continuous values, not categories.
+* Multiple Linear Regression is simply an extension of Linear Regression with multiple input variables but still predicts continuous values, not categories.
 
-Using regression models for classification problems can produce invalid outputs, such as decimal numbers that do not correspond to a class label.
+* Using regression models for classification problems can produce invalid outputs, such as decimal numbers that do not correspond to a class label.
 
-Therefore, classification algorithms were used instead, such as:
+  Therefore, classification algorithms were used instead, such as:
 
-KNN
+  KNN
 
-Logistic Regression
+  Logistic Regression
 
-Decision Tree
+  Decision Tree
 
-Random Forest
+  Random Forest
 
-These algorithms are specifically designed to predict discrete class labels, making them appropriate for the dance form classification task
+  These algorithms are specifically designed to predict discrete class labels, making them appropriate for the dance form classification task
 
