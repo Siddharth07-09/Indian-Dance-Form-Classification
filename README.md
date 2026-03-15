@@ -122,45 +122,27 @@ Heatmaps were generated using a red color scale for better visualization.
 
 ---
 
-## How to Run the Project
+Why Linear Regression and Multiple Linear Regression Were Not Used
 
-1. Clone the repository
+Linear Regression is used for predicting continuous numerical values such as house price, temperature, or salary.
 
-```
-git clone https://github.com/yourusername/indian-dance-classification.git
-```
+In this project, the goal is to classify Indian dance forms, which are categorical labels (e.g., Bharatanatyam, Kathak, Odissi).
 
-2. Install dependencies
+Since the output is categorical and not numerical, Linear Regression is not suitable for this problem.
 
-```
-pip install opencv-python numpy matplotlib scikit-learn pandas
-```
+Multiple Linear Regression is simply an extension of Linear Regression with multiple input variables but still predicts continuous values, not categories.
 
-3. Run the notebook or Python script
+Using regression models for classification problems can produce invalid outputs, such as decimal numbers that do not correspond to a class label.
 
-```
-python main.py
-```
+Therefore, classification algorithms were used instead, such as:
 
----
+KNN
 
-## Future Improvements
+Logistic Regression
 
-Possible improvements for this project:
+Decision Tree
 
-* Use **deep learning models (CNN)** for higher accuracy
-* Apply **feature extraction techniques (HOG / SIFT)**
-* Increase dataset size
-* Implement real-time dance classification
+Random Forest
 
----
+These algorithms are specifically designed to predict discrete class labels, making them appropriate for the dance form classification task
 
-## Author
-
-Developed as a machine learning project for Indian classical dance classification.
-
----
-
-## License
-
-This project is open-source and available under the MIT License.
